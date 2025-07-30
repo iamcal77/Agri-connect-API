@@ -78,7 +78,8 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(
             "http://localhost:3000",
-            "https://agriconnect2.netlify.app"
+            "https://agriconnect2.netlify.app",
+            "https://task-fronend.onrender.com"
         )
         .AllowAnyMethod()
         .AllowAnyHeader();
