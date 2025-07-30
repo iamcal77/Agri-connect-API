@@ -77,7 +77,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAllOrigins", policy =>
     {
         policy.WithOrigins(
-            "http://localhost:3000"
+            "http://localhost:3000",
+            "https://agriconnect2.netlify.app"
         )
         .AllowAnyMethod()
         .AllowAnyHeader();
